@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.box {
+  height: 100vh;
+  display: flex;
+  /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+  flex: 1 1 auto;
+  /* flex-flow: <flex-direction> || <flex-wrap>; */
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
