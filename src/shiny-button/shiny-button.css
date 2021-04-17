@@ -1,0 +1,46 @@
+a {
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  margin: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shiny-button {
+  position: relative;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #15acda, #da65da, #e4cf18, #15acda);
+  background-size: 400%;
+}
+
+.shiny-button::before {
+  position: absolute;
+  content: "";
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+
+  border-radius: 50px;
+  background: linear-gradient(90deg, #15acda, #da65da, #e4cf18, #15acda);
+  background-size: 400%;
+
+  filter: blur(20px);
+
+  z-index: -1;
+}
+
+.shiny-button:hover {
+  animation: shiny 8s infinite;
+}
+
+.shiny-button:hover::before {
+  animation: shiny 8s infinite;
+}
+
+@keyframes shiny {
+  100% {
+    background-position-x: -400%;
+  }
+}
